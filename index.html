@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App gestión de economía</title>
+</head>
+<body>
+    <h1>mi cambiada de gastos</h1>
+
+    <form id="transactionForm">
+        <label for="transactionType">tipo</label>
+        <input id="transactionType" name="transactionType">
+
+        <label for="transactionDescription">descripcion</label>
+        <input id="transactionDescription" name="transactionDescription">
+
+        <label for="transactionAmount">monto</label>
+        <input type="number" id="transactionAmount" name="transactionAmount">
+
+        <label for="transactionCategory">categoria</label>
+        <input id="transactionCategory" name="transactionCategory">    
+        <button>guardar</button>
+    </form>
+
+    <div>
+        <table id="transactionTable">
+            <tr>
+                <th>Tipo</th>
+                <th>Descripcion</th>
+                <th>Monto</th>
+                <th>Categoría</th>
+            </tr>          
+
+
+        </table>
+    </div>
+
+
+
+    <style>
+        table
+        {
+            border: black 2px solid;
+        }
+
+        td, th
+        {
+            border: solid red 1px;
+        }
+    </style>
+
+    <script src="index.js"></script>
+</body>
+</html>
